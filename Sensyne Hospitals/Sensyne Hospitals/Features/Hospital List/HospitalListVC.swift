@@ -8,13 +8,18 @@
 import UIKit
 
 // MARK: - HospitalListViewProtocol
-protocol HospitalListViewProtocol: class {
-    
-}
+protocol HospitalListViewProtocol: class {}
 
 // MARK: - HospitalListVC
 class HospitalListVC: UIViewController {
+    lazy var viewModel: HospitalListViewModelProtocol = { [weak self] in
+        return HospitalListViewModel(view: self)
+    }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.viewModel.fetchHospitals()
+    }
 }
 
 // MARK: - Implement HospitalListViewProtocol

@@ -17,6 +17,7 @@
 		429D3CE72547318100221CBB /* HospitalListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CE62547318100221CBB /* HospitalListVC.swift */; };
 		429D3CEC2547324600221CBB /* HospitalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CEB2547324600221CBB /* HospitalListViewModel.swift */; };
 		429D3CF3254732DC00221CBB /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CF2254732DC00221CBB /* Hospital.swift */; };
+		429D3CF82547400100221CBB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CF72547400100221CBB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		429D3CE62547318100221CBB /* HospitalListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListVC.swift; sourceTree = "<group>"; };
 		429D3CEB2547324600221CBB /* HospitalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModel.swift; sourceTree = "<group>"; };
 		429D3CF2254732DC00221CBB /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		429D3CF72547400100221CBB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				429D3CF0254732CA00221CBB /* Models */,
+				429D3CF72547400100221CBB /* NetworkManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429D3CF82547400100221CBB /* NetworkManager.swift in Sources */,
 				429D3CE72547318100221CBB /* HospitalListVC.swift in Sources */,
 				429D3CA82547312400221CBB /* AppDelegate.swift in Sources */,
 				429D3CEC2547324600221CBB /* HospitalListViewModel.swift in Sources */,

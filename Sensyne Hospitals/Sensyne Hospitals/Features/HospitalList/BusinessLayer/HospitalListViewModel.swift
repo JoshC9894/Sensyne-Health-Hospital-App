@@ -67,7 +67,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
                 self.filterByIsNHS()
             })
             if (self.isFilteredByNHS) {
-                var image = UIImage(named: "tick")
+                let image = UIImage(named: "tick")
                 action.setValue(image, forKey: "image")
             }
             return action

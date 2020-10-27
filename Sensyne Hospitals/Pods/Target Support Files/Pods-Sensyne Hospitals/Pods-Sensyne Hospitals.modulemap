@@ -1,6 +1,0 @@
-framework module Pods_Sensyne_Hospitals {
-  umbrella header "Pods-Sensyne Hospitals-umbrella.h"
-
-  export *
-  module * { export * }
-}

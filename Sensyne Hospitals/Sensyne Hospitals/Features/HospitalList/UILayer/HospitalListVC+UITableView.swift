@@ -12,6 +12,16 @@ extension HospitalListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.cellHeight
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let identifier = HospitalDetailsVC.storyboardIdentifier
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier) as? HospitalDetailsVC else {
+            return
+        }
+        let hospital = self.hospitals[indexPath.row]
+        vc.viewModel.hospital = hospital
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 // MARK: - UITableViewDataSource

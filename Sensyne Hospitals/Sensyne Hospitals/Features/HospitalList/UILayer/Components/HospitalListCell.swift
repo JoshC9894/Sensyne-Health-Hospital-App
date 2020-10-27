@@ -18,16 +18,4 @@ class HospitalListCell: UITableViewCell {
         self.orgNameLabel.text = hospital.organisationName
         self.orgTypeLabel.text = hospital.organisationType
     }
-    
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//    }
-//
 }

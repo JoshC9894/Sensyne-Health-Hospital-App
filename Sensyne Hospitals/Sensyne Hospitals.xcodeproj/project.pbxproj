@@ -13,6 +13,8 @@
 		42614AD125488319003BBAC8 /* HospitalListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AD025488319003BBAC8 /* HospitalListViewSpy.swift */; };
 		42614AD7254883D1003BBAC8 /* NetworkManagerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AD6254883D1003BBAC8 /* NetworkManagerSpy.swift */; };
 		42614AE72548897D003BBAC8 /* Hospital.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42614AE62548897D003BBAC8 /* Hospital.csv */; };
+		42614AF5254891D4003BBAC8 /* HospitalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AF4254891D4003BBAC8 /* HospitalDetailsVC.swift */; };
+		42614AFD25489215003BBAC8 /* HospitalDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AFC25489215003BBAC8 /* HospitalDetailsViewModel.swift */; };
 		4287A80C2548726700B344EC /* HospitalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287A80A2548726700B344EC /* HospitalListCell.swift */; };
 		4287A80D2548726700B344EC /* HospitalListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4287A80B2548726700B344EC /* HospitalListCell.xib */; };
 		429D3CA82547312400221CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CA72547312400221CBB /* AppDelegate.swift */; };
@@ -55,6 +57,8 @@
 		42614AD025488319003BBAC8 /* HospitalListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewSpy.swift; sourceTree = "<group>"; };
 		42614AD6254883D1003BBAC8 /* NetworkManagerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerSpy.swift; sourceTree = "<group>"; };
 		42614AE62548897D003BBAC8 /* Hospital.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hospital.csv; path = ../../../../../Downloads/Hospital.csv; sourceTree = "<group>"; };
+		42614AF4254891D4003BBAC8 /* HospitalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailsVC.swift; sourceTree = "<group>"; };
+		42614AFC25489215003BBAC8 /* HospitalDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailsViewModel.swift; sourceTree = "<group>"; };
 		4287A80A2548726700B344EC /* HospitalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListCell.swift; sourceTree = "<group>"; };
 		4287A80B2548726700B344EC /* HospitalListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalListCell.xib; sourceTree = "<group>"; };
 		429D3CA42547312400221CBB /* Sensyne Hospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sensyne Hospitals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,40 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		42614AF125489145003BBAC8 /* HospitallDetails */ = {
+			isa = PBXGroup;
+			children = (
+				42614AF32548919A003BBAC8 /* BusinessLayer */,
+				42614AF225489190003BBAC8 /* UILayer */,
+			);
+			path = HospitallDetails;
+			sourceTree = "<group>";
+		};
+		42614AF225489190003BBAC8 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				42614AF4254891D4003BBAC8 /* HospitalDetailsVC.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		42614AF32548919A003BBAC8 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				42614AFC25489215003BBAC8 /* HospitalDetailsViewModel.swift */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		42614B012548922F003BBAC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4287A80A2548726700B344EC /* HospitalListCell.swift */,
+				4287A80B2548726700B344EC /* HospitalListCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		429D3C9B2547312400221CBB = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +228,8 @@
 		429D3CE32547314F00221CBB /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				429D3CE52547315F00221CBB /* Hospital List */,
+				42614AF125489145003BBAC8 /* HospitallDetails */,
+				429D3CE52547315F00221CBB /* HospitalList */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -205,13 +244,13 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		429D3CE52547315F00221CBB /* Hospital List */ = {
+		429D3CE52547315F00221CBB /* HospitalList */ = {
 			isa = PBXGroup;
 			children = (
-				42E6F7712548694A008E1CB0 /* Business Layer */,
-				42E6F7702548693A008E1CB0 /* UI Layer */,
+				42E6F7712548694A008E1CB0 /* BusinessLayer */,
+				42E6F7702548693A008E1CB0 /* UILayer */,
 			);
-			path = "Hospital List";
+			path = HospitalList;
 			sourceTree = "<group>";
 		};
 		429D3CF0254732CA00221CBB /* Models */ = {
@@ -223,23 +262,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		42E6F7702548693A008E1CB0 /* UI Layer */ = {
+		42E6F7702548693A008E1CB0 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				42614B012548922F003BBAC8 /* Components */,
 				429D3CE62547318100221CBB /* HospitalListVC.swift */,
 				42E6F7722548697C008E1CB0 /* HospitalListVC+UITableView.swift */,
-				4287A80A2548726700B344EC /* HospitalListCell.swift */,
-				4287A80B2548726700B344EC /* HospitalListCell.xib */,
 			);
-			path = "UI Layer";
+			path = UILayer;
 			sourceTree = "<group>";
 		};
-		42E6F7712548694A008E1CB0 /* Business Layer */ = {
+		42E6F7712548694A008E1CB0 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
 				429D3CEB2547324600221CBB /* HospitalListViewModel.swift */,
 			);
-			path = "Business Layer";
+			path = BusinessLayer;
 			sourceTree = "<group>";
 		};
 		42E87F91254861850088A381 /* Enums */ = {
@@ -392,6 +430,8 @@
 				42E87F8D2548612E0088A381 /* HospitalCSVField.swift in Sources */,
 				429D3CF3254732DC00221CBB /* Hospital.swift in Sources */,
 				429D3CAA2547312400221CBB /* SceneDelegate.swift in Sources */,
+				42614AF5254891D4003BBAC8 /* HospitalDetailsVC.swift in Sources */,
+				42614AFD25489215003BBAC8 /* HospitalDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
     weak var view: HospitalListViewProtocol?
     var networkManager: NetworkManagerProtocol
     var queue: DispatchQueue = DispatchQueue.main
+    private var hospitals: [Hospital]!
     
     init(view: HospitalListViewProtocol?) {
         self.view = view
@@ -32,6 +33,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
                 if let data = data {
                     let csv = CSVFile(data: data)
                     let models = self.parseCSV(csv: csv)
+                    self.hospitals = models
                     self.queue.async {
                         self.view?.updateHospitalsList(models)
                     }

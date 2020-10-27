@@ -17,7 +17,7 @@ class HospitalListVCTests: XCTestCase {
     override func setUp() {
         self.window = UIWindow()
         
-        let sutIdentifier = "HospitalListVC"
+        let sutIdentifier = HospitalListVC.
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: sutIdentifier) as? HospitalListVC else {
             fatalError();
         }

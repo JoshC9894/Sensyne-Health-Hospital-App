@@ -38,11 +38,28 @@
                     <navigationItem key="navigationItem" title="Hospitals" id="klP-CI-z88"/>
                     <connections>
                         <outlet property="tableView" destination="77G-3p-v9g" id="6K3-4F-Y6a"/>
+                        <segue destination="vgY-cE-xpr" kind="show" identifier="HospitalDetailsSegue" id="Co4-Il-js5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="81.696428571428569"/>
+        </scene>
+        <!--Hospital DetailsVC-->
+        <scene sceneID="SOu-yc-agv">
+            <objects>
+                <viewController storyboardIdentifier="HospitalDetailsVC" id="vgY-cE-xpr" customClass="HospitalDetailsVC" customModule="Sensyne_Hospitals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7y9-Bw-5cS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EKO-Iw-19j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wxo-hj-MQ5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qe8-gt-GN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vIj-nP-sbD">

@@ -5,19 +5,24 @@
 //  Created by Joshua Colley on 26/10/2020.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - HospitalListViewModelProtocol
 protocol HospitalListViewModelProtocol {
     func fetchHospitals()
+    func filterHospitals(by query: String)
+    func didTapFilterButton()
 }
 
 // MARK: - HospitalListViewModel
 class HospitalListViewModel: HospitalListViewModelProtocol {
+    
     weak var view: HospitalListViewProtocol?
     var networkManager: NetworkManagerProtocol
     var queue: DispatchQueue = DispatchQueue.main
     private var hospitals: [Hospital]!
+    private var filteredHospitals: [Hospital]?
+    private var isFilteredByNHS: Bool = false
     
     init(view: HospitalListViewProtocol?) {
         self.view = view
@@ -45,7 +50,43 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
         }
     }
     
+    func filterHospitals(by query: String) {
+        if query.isEmpty {
+            self.filteredHospitals = nil
+        } else {
+            let filtered = self.hospitals?.filter({ $0.organisationName.contains(query) }) ?? []
+            self.filteredHospitals = filtered
+        }
+        self.filterByIsNHS()
+    }
+    
+    func didTapFilterButton() {
+        let actionSheet = UIAlertController(title: "Filters", message: nil, preferredStyle: .actionSheet)
+        let pimsFilter: UIAlertAction = {
+            let action = UIAlertAction(title: "Only NHS trusts", style: .default, handler: { (_) in
+                self.filterByIsNHS()
+            })
+            if (self.isFilteredByNHS) {
+                var image = UIImage(named: "tick")
+                action.setValue(image, forKey: "image")
+            }
+            return action
+        }()
+        actionSheet.addAction(pimsFilter)
+        actionSheet.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+        self.view?.presentFilters(actionSheet)
+    }
+    
     // MARK: Private Methods
+    private func filterByIsNHS() {
+        self.isFilteredByNHS = !self.isFilteredByNHS
+        var models = self.filteredHospitals ?? (self.hospitals ?? [])
+        if self.isFilteredByNHS {
+            models = models.filter({ $0.parentName.lowercased().contains("nhs") })
+        }
+        self.view?.updateHospitalsList(models)
+    }
+    
     private func parseCSV(csv: CSVFile) -> [Hospital] {
         var hospitals: [Hospital] = []
         csv.rows.enumerated().forEach { (index, _) in

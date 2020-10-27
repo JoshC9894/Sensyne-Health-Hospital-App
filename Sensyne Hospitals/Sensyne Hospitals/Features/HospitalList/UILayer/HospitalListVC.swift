@@ -10,6 +10,7 @@ import UIKit
 // MARK: - HospitalListViewProtocol
 protocol HospitalListViewProtocol: class {
     func updateHospitalsList(_ hospitals: [Hospital])
+    func presentFilters(_ actionSheet: UIAlertController)
 }
 
 // MARK: - HospitalListVC
@@ -18,6 +19,7 @@ class HospitalListVC: UIViewController {
     let cellHeight: CGFloat = 85.0
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var filterButton: UIBarButtonItem!
     
     var hospitals: [Hospital] = []
     lazy var viewModel: HospitalListViewModelProtocol = { [weak self] in
@@ -27,6 +29,7 @@ class HospitalListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerCells()
+        self.setupNavbar()
         self.viewModel.fetchHospitals()
     }
     
@@ -36,6 +39,19 @@ class HospitalListVC: UIViewController {
         let nib = UINib(nibName: identifer, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: identifer)
     }
+    
+    private func setupNavbar() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Hospitals"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
+    @IBAction func filterButtonSelector(_ sender: UIBarButtonItem) {
+        self.viewModel.didTapFilterButton()
+    }
 }
 
 // MARK: - Implement HospitalListViewProtocol
@@ -44,4 +60,18 @@ extension HospitalListVC: HospitalListViewProtocol {
         self.hospitals = hospitals
         self.tableView.reloadData()
     }
+    
+    func presentFilters(_ actionSheet: UIAlertController) {
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+}
+
+// MARK: - UISearchResultsUpdating
+extension HospitalListVC: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+    let searchBar = searchController.searchBar
+    if let query = searchBar.text {
+        self.viewModel.filterHospitals(by: query)
+    }
+  }
 }

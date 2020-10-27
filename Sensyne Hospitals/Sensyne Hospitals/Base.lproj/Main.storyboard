@@ -35,8 +35,15 @@
                             <constraint firstItem="77G-3p-v9g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ftv-QY-2Iu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Hospitals" id="klP-CI-z88"/>
+                    <navigationItem key="navigationItem" title="Hospitals" id="klP-CI-z88">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="5T9-Sc-ytf">
+                            <connections>
+                                <action selector="filterButtonSelector:" destination="BYZ-38-t0r" id="giM-YY-ilh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="filterButton" destination="5T9-Sc-ytf" id="cCT-fl-q4K"/>
                         <outlet property="tableView" destination="77G-3p-v9g" id="6K3-4F-Y6a"/>
                         <segue destination="vgY-cE-xpr" kind="show" identifier="HospitalDetailsSegue" id="Co4-Il-js5"/>
                     </connections>

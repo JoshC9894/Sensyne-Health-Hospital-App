@@ -6,26 +6,55 @@
 //
 
 struct Hospital {
-    let organisationId: Int
-    let organisationCode: String
-    let organisationType: String
-    let organisationName: String
+    var organisationId: String
+    var organisationCode: String
+    var organisationType: String
+    var organisationName: String
+    var organisationStatus: String
 
-    let subtype: String
-    let sector: String
-    let organisationStatus: String
-    let isPimsManaged: Bool
-    let parentODSCode: String
+    var subtype: String
+    var sector: String
+    var isPimsManaged: Bool
+    var parentODSCode: String
+    var parentName: String
 
-    let address1: String
-    let address2: String
-    let address3: String
-    let city: String
-    let county: String
-    let postcode: String
-    let latitude: Double
-    let longitude: Double
-    let phoneNumber: String
-    let website: String
-    let fax: String
+    var address1: String
+    var address2: String
+    var address3: String
+    var city: String
+    var county: String
+    var postcode: String
+    var latitude: Double
+    var longitude: Double
+    var phoneNumber: String
+    var email: String
+    var website: String
+    var fax: String
+    
+    init() {
+        self.organisationId = ""
+        self.organisationCode = ""
+        self.organisationType = ""
+        self.organisationName = ""
+        self.organisationStatus = ""
+        
+        self.subtype = ""
+        self.sector = ""
+        self.isPimsManaged = false
+        self.parentODSCode = ""
+        self.parentName = ""
+        
+        self.address1 = ""
+        self.address2 = ""
+        self.address3 = ""
+        self.city = ""
+        self.county = ""
+        self.postcode = ""
+        self.latitude = 0.0
+        self.longitude = 0.0
+        self.phoneNumber = ""
+        self.email = ""
+        self.website = ""
+        self.fax = ""
+    }
 }

@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07800D2F0F04A6C0CB5680B37DEF5CD9 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AE5910797BCB4DDFAD38C683AAEF89 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m */; };
+		090412E6CC44FE52F5FDB247B2962FBA /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */; };
+		1AF8EA1164FF2B62A4BC2A435A7F98A9 /* Pods-Sensyne Hospitals-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6BEB212B5A70A3C1D5502E97276B05 /* Pods-Sensyne Hospitals-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE2430905FB76E9DD62B193389BB0EE /* Pods-Sensyne HospitalsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D08CDC37123B7F451007452534B5F3 /* Pods-Sensyne HospitalsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222EB73561647DE80452E3E328B32CD0 /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */; };
+		26F7AE9A6AA25C28C91F424B29CD8DEF /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */; };
+		31724F95E71C22A76000813D6E0E7524 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */; };
+		37C60E1632427700F648007E2BA76DA3 /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */; };
+		3B284AE585F098CDE5FD519677EF0533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4038B6012107C5650923BB64EABD76F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4B700F27AC8534C54234C2A2FC193614 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBC8BBA220CACB9F93E2B7D263EFD4B /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBA15B301B6D65E0EDD8F40E5C99C25 /* Pods-Sensyne HospitalsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D836F7638B3C10F9B7686037351C5A26 /* Pods-Sensyne HospitalsTests-dummy.m */; };
+		7D277B67684E50872DEC45D7F7065659 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7B04C65DE5CD0EABB2ADEAD137EAE9 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */; };
+		926D68CDD29320961D2350A2FADBF6F3 /* Pods-Sensyne Hospitals-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 491516CFA1A5D821CB4CFB1003938AD8 /* Pods-Sensyne Hospitals-dummy.m */; };
+		A740150BEEAFFF38EEC3DF962ECC849D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A97CB71667C9B4379CE89775DF73E6B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CB306DAEA07D0C44678869FC3A10BA68 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */; };
+		E4428EB6748DA102A5772764EE77970D /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */; };
+		F6CC069DB631A0BC6E663E0E2D0C0417 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37DEB83997F6681041BC37888BB5A0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9617FEF749C2A4DEB177789B70E08C51;
+			remoteInfo = CSV.swift;
+		};
+		CB33F8166BC02C0BD61DCA7E436AB95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9617FEF749C2A4DEB177789B70E08C51;
+			remoteInfo = CSV.swift;
+		};
+		D0DC7100924A484EDF1A4A543B42E754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C48DD905FD61B39B785B6C5444085280;
+			remoteInfo = "Pods-Sensyne Hospitals";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01618485C179B72182672A7FB3CF1B03 /* Pods-Sensyne Hospitals-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne Hospitals-acknowledgements.plist"; sourceTree = "<group>"; };
+		058052B25592A0C05BE29C0B0D8BEC19 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
+		138F6A21FECC7A5A9FA32D9A1D786BAE /* Pods-Sensyne Hospitals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne Hospitals.debug.xcconfig"; sourceTree = "<group>"; };
+		16D08CDC37123B7F451007452534B5F3 /* Pods-Sensyne HospitalsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sensyne HospitalsTests-umbrella.h"; sourceTree = "<group>"; };
+		275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
+		280D60D7628E29397224B601799330FD /* Pods-Sensyne Hospitals.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sensyne Hospitals.modulemap"; sourceTree = "<group>"; };
+		2C7DAF014D3AB6EB4531BB54B74D6B18 /* Pods-Sensyne Hospitals-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sensyne Hospitals-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B6BEB212B5A70A3C1D5502E97276B05 /* Pods-Sensyne Hospitals-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sensyne Hospitals-umbrella.h"; sourceTree = "<group>"; };
+		436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRowDecoder.swift; path = Sources/CSV/CSVRowDecoder.swift; sourceTree = "<group>"; };
+		43E18BAE378FF971789C5C78FA8666AB /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-Info.plist"; sourceTree = "<group>"; };
+		465F558998E16D39B73F56E45DD36B07 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
+		46EC7AD1FF70639FF1D50E857BFB0720 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests.modulemap"; sourceTree = "<group>"; };
+		47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Legacy.swift; path = Sources/CSV/Legacy.swift; sourceTree = "<group>"; };
+		491516CFA1A5D821CB4CFB1003938AD8 /* Pods-Sensyne Hospitals-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sensyne Hospitals-dummy.m"; sourceTree = "<group>"; };
+		4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
+		554871A4A653852180377D9136C0687C /* Pods-Sensyne HospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne HospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A746B62A752858D9945C72DE6974F7E /* Pods-Sensyne HospitalsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne HospitalsTests-Info.plist"; sourceTree = "<group>"; };
+		5CD6F088668FB9D51C8A975AF4E14E5B /* Pods_Sensyne_Hospitals_Sensyne_HospitalsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sensyne_Hospitals_Sensyne_HospitalsUITests.framework; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D3EE4F7407E562A7BB1EF450A546552 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.debug.xcconfig; sourceTree = "<group>"; };
+		6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
+		69A54DF094A90DE0607BF4BFF4881244 /* Pods-Sensyne Hospitals-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne Hospitals-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
+		78AE5910797BCB4DDFAD38C683AAEF89 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m"; sourceTree = "<group>"; };
+		79D99009CBD4BADF36045C2369FA13D4 /* Pods-Sensyne HospitalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne HospitalsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C9B14547807A7D53920529F1DCF0A0D /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		81278DA136004D52ADADD2C070F66EAE /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		831A45D7D8375DB57B623E9D9C6D935F /* Pods-Sensyne HospitalsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sensyne HospitalsTests.modulemap"; sourceTree = "<group>"; };
+		8DBC8BBA220CACB9F93E2B7D263EFD4B /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
+		A88793235B53022C96AF3479C150C925 /* CSV.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CSV.swift-Info.plist"; sourceTree = "<group>"; };
+		A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
+		AC29D16ECFFFDF14BF53DACC155D088C /* Pods-Sensyne HospitalsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sensyne HospitalsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
+		BBAD9869D4AE262C5646475ED782CF1F /* Pods_Sensyne_Hospitals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sensyne_Hospitals.framework; path = "Pods-Sensyne Hospitals.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC216C3B1B84353D074140BAA7E83ED5 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.framework; path = CSV.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9315CE92930BD44BAABB521F0FDCD6C /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
+		C9CE4BC9EE8E63DF5FE8DF9FDD0C4A0E /* Pods_Sensyne_HospitalsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sensyne_HospitalsTests.framework; path = "Pods-Sensyne HospitalsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5B8F06AAF570953C94210978EEA56F /* Pods-Sensyne HospitalsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sensyne HospitalsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.release.xcconfig; sourceTree = "<group>"; };
+		D731FAF83EA344F0AD792EFDC255BB40 /* Pods-Sensyne Hospitals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sensyne Hospitals.release.xcconfig"; sourceTree = "<group>"; };
+		D836F7638B3C10F9B7686037351C5A26 /* Pods-Sensyne HospitalsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sensyne HospitalsTests-dummy.m"; sourceTree = "<group>"; };
+		F1EB92C1944A310D08A3B1D7B65914FF /* Pods-Sensyne Hospitals-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sensyne Hospitals-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013BC1F26597AE8DB38BAFE916B357F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A740150BEEAFFF38EEC3DF962ECC849D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D81D3219DCF1A5F551DA45CFF5D8E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CB71667C9B4379CE89775DF73E6B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E580EFC88DFBC8F1C71860BF78489CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B284AE585F098CDE5FD519677EF0533 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8A78E5B5303E25ADDB5D67024F291D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4038B6012107C5650923BB64EABD76F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0101F8D26C6A1F2FF6B906FCAC23E587 /* Pods-Sensyne Hospitals */ = {
+			isa = PBXGroup;
+			children = (
+				280D60D7628E29397224B601799330FD /* Pods-Sensyne Hospitals.modulemap */,
+				2C7DAF014D3AB6EB4531BB54B74D6B18 /* Pods-Sensyne Hospitals-acknowledgements.markdown */,
+				01618485C179B72182672A7FB3CF1B03 /* Pods-Sensyne Hospitals-acknowledgements.plist */,
+				491516CFA1A5D821CB4CFB1003938AD8 /* Pods-Sensyne Hospitals-dummy.m */,
+				F1EB92C1944A310D08A3B1D7B65914FF /* Pods-Sensyne Hospitals-frameworks.sh */,
+				69A54DF094A90DE0607BF4BFF4881244 /* Pods-Sensyne Hospitals-Info.plist */,
+				3B6BEB212B5A70A3C1D5502E97276B05 /* Pods-Sensyne Hospitals-umbrella.h */,
+				138F6A21FECC7A5A9FA32D9A1D786BAE /* Pods-Sensyne Hospitals.debug.xcconfig */,
+				D731FAF83EA344F0AD792EFDC255BB40 /* Pods-Sensyne Hospitals.release.xcconfig */,
+			);
+			name = "Pods-Sensyne Hospitals";
+			path = "Target Support Files/Pods-Sensyne Hospitals";
+			sourceTree = "<group>";
+		};
+		03676C101DAEB0AD850B71A9CFF118E6 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46EC7AD1FF70639FF1D50E857BFB0720 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.modulemap */,
+				BC216C3B1B84353D074140BAA7E83ED5 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.markdown */,
+				7C9B14547807A7D53920529F1DCF0A0D /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-acknowledgements.plist */,
+				78AE5910797BCB4DDFAD38C683AAEF89 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m */,
+				5D3EE4F7407E562A7BB1EF450A546552 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-frameworks.sh */,
+				43E18BAE378FF971789C5C78FA8666AB /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-Info.plist */,
+				8DBC8BBA220CACB9F93E2B7D263EFD4B /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h */,
+				058052B25592A0C05BE29C0B0D8BEC19 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.debug.xcconfig */,
+				81278DA136004D52ADADD2C070F66EAE /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.release.xcconfig */,
+			);
+			name = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests";
+			path = "Target Support Files/Pods-Sensyne Hospitals-Sensyne HospitalsUITests";
+			sourceTree = "<group>";
+		};
+		4993A0D61B28CE3A166D69FD83F71DD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				465F558998E16D39B73F56E45DD36B07 /* CSV.swift.modulemap */,
+				0AAAF6A219F016839562BC0888E21A65 /* CSV.swift-dummy.m */,
+				A88793235B53022C96AF3479C150C925 /* CSV.swift-Info.plist */,
+				C9315CE92930BD44BAABB521F0FDCD6C /* CSV.swift-prefix.pch */,
+				9EC843986770307A58BE233B21CB69F5 /* CSV.swift-umbrella.h */,
+				649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */,
+				D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSV.swift";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58732056964C2D816890179162BA432D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBDB7488CED924C504A98D2D4C1DD299 /* CSV.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A923BACE735DA510719F666A5D05DCB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0101F8D26C6A1F2FF6B906FCAC23E587 /* Pods-Sensyne Hospitals */,
+				03676C101DAEB0AD850B71A9CFF118E6 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests */,
+				AA34C6C4278DFDEAE7269BF9C03AA2B1 /* Pods-Sensyne HospitalsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		75025DF79A6BD639FB6EB8D024E05BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */,
+				BBAD9869D4AE262C5646475ED782CF1F /* Pods_Sensyne_Hospitals.framework */,
+				5CD6F088668FB9D51C8A975AF4E14E5B /* Pods_Sensyne_Hospitals_Sensyne_HospitalsUITests.framework */,
+				C9CE4BC9EE8E63DF5FE8DF9FDD0C4A0E /* Pods_Sensyne_HospitalsTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA34C6C4278DFDEAE7269BF9C03AA2B1 /* Pods-Sensyne HospitalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				831A45D7D8375DB57B623E9D9C6D935F /* Pods-Sensyne HospitalsTests.modulemap */,
+				AC29D16ECFFFDF14BF53DACC155D088C /* Pods-Sensyne HospitalsTests-acknowledgements.markdown */,
+				CC5B8F06AAF570953C94210978EEA56F /* Pods-Sensyne HospitalsTests-acknowledgements.plist */,
+				D836F7638B3C10F9B7686037351C5A26 /* Pods-Sensyne HospitalsTests-dummy.m */,
+				5A746B62A752858D9945C72DE6974F7E /* Pods-Sensyne HospitalsTests-Info.plist */,
+				16D08CDC37123B7F451007452534B5F3 /* Pods-Sensyne HospitalsTests-umbrella.h */,
+				554871A4A653852180377D9136C0687C /* Pods-Sensyne HospitalsTests.debug.xcconfig */,
+				79D99009CBD4BADF36045C2369FA13D4 /* Pods-Sensyne HospitalsTests.release.xcconfig */,
+			);
+			name = "Pods-Sensyne HospitalsTests";
+			path = "Target Support Files/Pods-Sensyne HospitalsTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				58732056964C2D816890179162BA432D /* Pods */,
+				75025DF79A6BD639FB6EB8D024E05BCF /* Products */,
+				5A923BACE735DA510719F666A5D05DCB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBDB7488CED924C504A98D2D4C1DD299 /* CSV.swift */ = {
+			isa = PBXGroup;
+			children = (
+				275C883DE47280331718FBE9B75250E4 /* BinaryReader.swift */,
+				4D5AB1548C3401ADFC77FD143458E987 /* CSVError.swift */,
+				A8C3188FCE66B6D92AB0E2027E38CD21 /* CSVReader.swift */,
+				436B90B7880A530A36A8703D4AF2D37F /* CSVRowDecoder.swift */,
+				6968BD611C9604D961DFBCFDA7D58885 /* CSVWriter.swift */,
+				7307F36F80C93DF1E40FEBCED2856A01 /* Endian.swift */,
+				47FF868768AEBACAE7CEF63061A15F21 /* Legacy.swift */,
+				AC54F61F17BF5E97EED8200EA9E0E81E /* UnicodeIterator.swift */,
+				4993A0D61B28CE3A166D69FD83F71DD4 /* Support Files */,
+			);
+			name = CSV.swift;
+			path = CSV.swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6481DEB0B85F2994D4D2AF173E9F095C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B700F27AC8534C54234C2A2FC193614 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7BE120C9FED8873EE61B19A8E9F1DA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE2430905FB76E9DD62B193389BB0EE /* Pods-Sensyne HospitalsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1BFED113BD55D652C97C9B51E1565A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF8EA1164FF2B62A4BC2A435A7F98A9 /* Pods-Sensyne Hospitals-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD858DC23658932864344284D1D7FAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D277B67684E50872DEC45D7F7065659 /* CSV.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7373BB264E14194027BD8A69CA4E8CE1 /* Pods-Sensyne HospitalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7AB89287ADE2C804969963DF86E4BD /* Build configuration list for PBXNativeTarget "Pods-Sensyne HospitalsTests" */;
+			buildPhases = (
+				B7BE120C9FED8873EE61B19A8E9F1DA2 /* Headers */,
+				4A7683B5AE5392874A27C0B938FF9644 /* Sources */,
+				E8A78E5B5303E25ADDB5D67024F291D3 /* Frameworks */,
+				C40FD8ED650DA73AF689CEAE32BEFAEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043E824120F62F733854663A1BD71887 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sensyne HospitalsTests";
+			productName = "Pods-Sensyne HospitalsTests";
+			productReference = C9CE4BC9EE8E63DF5FE8DF9FDD0C4A0E /* Pods_Sensyne_HospitalsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333D52041D98CABA333A68CAD8C47E4E /* Build configuration list for PBXNativeTarget "CSV.swift" */;
+			buildPhases = (
+				BCD858DC23658932864344284D1D7FAD /* Headers */,
+				0852BEB5BFB891346DB785B72BC7565D /* Sources */,
+				E580EFC88DFBC8F1C71860BF78489CF3 /* Frameworks */,
+				EF977F6D1B481C70E8BB082EC419E96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSV.swift;
+			productName = CSV.swift;
+			productReference = BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C48DD905FD61B39B785B6C5444085280 /* Pods-Sensyne Hospitals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF5F941B655154748C44EB6143345C4 /* Build configuration list for PBXNativeTarget "Pods-Sensyne Hospitals" */;
+			buildPhases = (
+				BC1BFED113BD55D652C97C9B51E1565A /* Headers */,
+				AE78AF0A061D2044D0C21EF95AB5F638 /* Sources */,
+				013BC1F26597AE8DB38BAFE916B357F0 /* Frameworks */,
+				14AC84109839F61994C5638327DCF070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0987ACA06C84B0CF9712747DF36E0266 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sensyne Hospitals";
+			productName = "Pods-Sensyne Hospitals";
+			productReference = BBAD9869D4AE262C5646475ED782CF1F /* Pods_Sensyne_Hospitals.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F85C5D43AF1F59611F138159B258BD42 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95661DF19C8AAE0083CCBC1ACC553188 /* Build configuration list for PBXNativeTarget "Pods-Sensyne Hospitals-Sensyne HospitalsUITests" */;
+			buildPhases = (
+				6481DEB0B85F2994D4D2AF173E9F095C /* Headers */,
+				F13E1CDDB0AABFA2FE6A1481395A4F65 /* Sources */,
+				1D81D3219DCF1A5F551DA45CFF5D8E86 /* Frameworks */,
+				7595B07DEE56E05ECBFD5BE6DA72E31F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41832B5FCC1C675E823CCF041E26B2E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests";
+			productName = "Pods-Sensyne Hospitals-Sensyne HospitalsUITests";
+			productReference = 5CD6F088668FB9D51C8A975AF4E14E5B /* Pods_Sensyne_Hospitals_Sensyne_HospitalsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 75025DF79A6BD639FB6EB8D024E05BCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */,
+				C48DD905FD61B39B785B6C5444085280 /* Pods-Sensyne Hospitals */,
+				F85C5D43AF1F59611F138159B258BD42 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests */,
+				7373BB264E14194027BD8A69CA4E8CE1 /* Pods-Sensyne HospitalsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AC84109839F61994C5638327DCF070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7595B07DEE56E05ECBFD5BE6DA72E31F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40FD8ED650DA73AF689CEAE32BEFAEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF977F6D1B481C70E8BB082EC419E96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0852BEB5BFB891346DB785B72BC7565D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7B04C65DE5CD0EABB2ADEAD137EAE9 /* BinaryReader.swift in Sources */,
+				31724F95E71C22A76000813D6E0E7524 /* CSV.swift-dummy.m in Sources */,
+				090412E6CC44FE52F5FDB247B2962FBA /* CSVError.swift in Sources */,
+				F6CC069DB631A0BC6E663E0E2D0C0417 /* CSVReader.swift in Sources */,
+				E4428EB6748DA102A5772764EE77970D /* CSVRowDecoder.swift in Sources */,
+				26F7AE9A6AA25C28C91F424B29CD8DEF /* CSVWriter.swift in Sources */,
+				CB306DAEA07D0C44678869FC3A10BA68 /* Endian.swift in Sources */,
+				222EB73561647DE80452E3E328B32CD0 /* Legacy.swift in Sources */,
+				37C60E1632427700F648007E2BA76DA3 /* UnicodeIterator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7683B5AE5392874A27C0B938FF9644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBA15B301B6D65E0EDD8F40E5C99C25 /* Pods-Sensyne HospitalsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78AF0A061D2044D0C21EF95AB5F638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926D68CDD29320961D2350A2FADBF6F3 /* Pods-Sensyne Hospitals-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F13E1CDDB0AABFA2FE6A1481395A4F65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07800D2F0F04A6C0CB5680B37DEF5CD9 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043E824120F62F733854663A1BD71887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sensyne Hospitals";
+			target = C48DD905FD61B39B785B6C5444085280 /* Pods-Sensyne Hospitals */;
+			targetProxy = D0DC7100924A484EDF1A4A543B42E754 /* PBXContainerItemProxy */;
+		};
+		0987ACA06C84B0CF9712747DF36E0266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSV.swift;
+			target = 9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */;
+			targetProxy = 37DEB83997F6681041BC37888BB5A0A6 /* PBXContainerItemProxy */;
+		};
+		41832B5FCC1C675E823CCF041E26B2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CSV.swift;
+			target = 9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */;
+			targetProxy = CB33F8166BC02C0BD61DCA7E436AB95E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2ECD88BEB271B5B43BB6A2CD044995AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C284B447C8FAD3ED768DBC76FAAAB5 /* CSV.swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38273B0DC22E20C0D6247018F7A21360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649E73144F1686380EE0AEB4BB3849D3 /* CSV.swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F600AF5D907C5D0BF3D671981C73414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81278DA136004D52ADADD2C070F66EAE /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne Hospitals-Sensyne HospitalsUITests/Pods-Sensyne Hospitals-Sensyne HospitalsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne Hospitals-Sensyne HospitalsUITests/Pods-Sensyne Hospitals-Sensyne HospitalsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E01CE754D3DCD85EDF14D3796F1C817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554871A4A653852180377D9136C0687C /* Pods-Sensyne HospitalsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne HospitalsTests/Pods-Sensyne HospitalsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne HospitalsTests/Pods-Sensyne HospitalsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		600B669F9549A09D6BF9F5826595AFFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058052B25592A0C05BE29C0B0D8BEC19 /* Pods-Sensyne Hospitals-Sensyne HospitalsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne Hospitals-Sensyne HospitalsUITests/Pods-Sensyne Hospitals-Sensyne HospitalsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne Hospitals-Sensyne HospitalsUITests/Pods-Sensyne Hospitals-Sensyne HospitalsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9E809C5779D8A402E9B4AD05F7B2F9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D99009CBD4BADF36045C2369FA13D4 /* Pods-Sensyne HospitalsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne HospitalsTests/Pods-Sensyne HospitalsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne HospitalsTests/Pods-Sensyne HospitalsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B13B066BB3F4393E1306886E2C30F8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D731FAF83EA344F0AD792EFDC255BB40 /* Pods-Sensyne Hospitals.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne Hospitals/Pods-Sensyne Hospitals-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne Hospitals/Pods-Sensyne Hospitals.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5770A1A42501D6CA1837D40D1AAFB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138F6A21FECC7A5A9FA32D9A1D786BAE /* Pods-Sensyne Hospitals.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sensyne Hospitals/Pods-Sensyne Hospitals-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sensyne Hospitals/Pods-Sensyne Hospitals.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333D52041D98CABA333A68CAD8C47E4E /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38273B0DC22E20C0D6247018F7A21360 /* Debug */,
+				2ECD88BEB271B5B43BB6A2CD044995AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF5F941B655154748C44EB6143345C4 /* Build configuration list for PBXNativeTarget "Pods-Sensyne Hospitals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5770A1A42501D6CA1837D40D1AAFB98 /* Debug */,
+				B13B066BB3F4393E1306886E2C30F8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7AB89287ADE2C804969963DF86E4BD /* Build configuration list for PBXNativeTarget "Pods-Sensyne HospitalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E01CE754D3DCD85EDF14D3796F1C817 /* Debug */,
+				9E809C5779D8A402E9B4AD05F7B2F9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95661DF19C8AAE0083CCBC1ACC553188 /* Build configuration list for PBXNativeTarget "Pods-Sensyne Hospitals-Sensyne HospitalsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600B669F9549A09D6BF9F5826595AFFA /* Debug */,
+				3F600AF5D907C5D0BF3D671981C73414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

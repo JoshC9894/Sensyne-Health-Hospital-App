@@ -16,6 +16,7 @@ protocol HospitalListViewModelProtocol {
 class HospitalListViewModel: HospitalListViewModelProtocol {
     weak var view: HospitalListViewProtocol?
     var networkManager: NetworkManagerProtocol
+    var queue: DispatchQueue = DispatchQueue.main
     
     init(view: HospitalListViewProtocol?) {
         self.view = view
@@ -31,7 +32,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
                 if let data = data {
                     let csv = CSVFile(data: data)
                     let models = self.parseCSV(csv: csv)
-                    DispatchQueue.main.async {
+                    self.queue.async {
                         self.view?.updateHospitalsList(models)
                     }
                 }
@@ -61,7 +62,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
     
     private func updateField(_ field: HospitalCSVField, for hospital: inout Hospital, with value: String) {
         switch field {
-        case .OrganisationId: hospital.organisationId = value
+        case .OrganisationId: hospital.organisationId = String(value.drop(while: { $0 == "\n"}))
         case .OrganisationCode: hospital.organisationCode = value
         case .OrganisationType: hospital.organisationType = value
         case .SubType: hospital.subtype = value
@@ -82,7 +83,7 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
         case .Phone: hospital.phoneNumber = value
         case .Email: hospital.email = value
         case .Website: hospital.website = value
-        case .Fax: hospital.fax = value
+        case .Fax: hospital.fax = String(value.drop(while: { $0 == "\n"}))
         }
     }
 }

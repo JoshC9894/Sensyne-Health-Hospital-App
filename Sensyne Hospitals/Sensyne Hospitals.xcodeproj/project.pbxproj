@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		42614ABB254876CA003BBAC8 /* HospitalListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614ABA254876CA003BBAC8 /* HospitalListVCTests.swift */; };
 		42614AC425487753003BBAC8 /* HospitalListViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AC325487753003BBAC8 /* HospitalListViewModelSpy.swift */; };
+		42614ACC25487B33003BBAC8 /* HospitalListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614ACB25487B33003BBAC8 /* HospitalListViewModelTests.swift */; };
+		42614AD125488319003BBAC8 /* HospitalListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AD025488319003BBAC8 /* HospitalListViewSpy.swift */; };
+		42614AD7254883D1003BBAC8 /* NetworkManagerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AD6254883D1003BBAC8 /* NetworkManagerSpy.swift */; };
+		42614AE72548897D003BBAC8 /* Hospital.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42614AE62548897D003BBAC8 /* Hospital.csv */; };
 		4287A80C2548726700B344EC /* HospitalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287A80A2548726700B344EC /* HospitalListCell.swift */; };
 		4287A80D2548726700B344EC /* HospitalListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4287A80B2548726700B344EC /* HospitalListCell.xib */; };
 		429D3CA82547312400221CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CA72547312400221CBB /* AppDelegate.swift */; };
@@ -47,6 +51,10 @@
 /* Begin PBXFileReference section */
 		42614ABA254876CA003BBAC8 /* HospitalListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListVCTests.swift; sourceTree = "<group>"; };
 		42614AC325487753003BBAC8 /* HospitalListViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModelSpy.swift; sourceTree = "<group>"; };
+		42614ACB25487B33003BBAC8 /* HospitalListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModelTests.swift; sourceTree = "<group>"; };
+		42614AD025488319003BBAC8 /* HospitalListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewSpy.swift; sourceTree = "<group>"; };
+		42614AD6254883D1003BBAC8 /* NetworkManagerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerSpy.swift; sourceTree = "<group>"; };
+		42614AE62548897D003BBAC8 /* Hospital.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hospital.csv; path = ../../../../../Downloads/Hospital.csv; sourceTree = "<group>"; };
 		4287A80A2548726700B344EC /* HospitalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListCell.swift; sourceTree = "<group>"; };
 		4287A80B2548726700B344EC /* HospitalListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalListCell.xib; sourceTree = "<group>"; };
 		429D3CA42547312400221CBB /* Sensyne Hospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sensyne Hospitals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +109,7 @@
 			children = (
 				42614AC225487736003BBAC8 /* Spies */,
 				42614ABA254876CA003BBAC8 /* HospitalListVCTests.swift */,
+				42614ACB25487B33003BBAC8 /* HospitalListViewModelTests.swift */,
 			);
 			path = "Hospital List Tests";
 			sourceTree = "<group>";
@@ -109,8 +118,17 @@
 			isa = PBXGroup;
 			children = (
 				42614AC325487753003BBAC8 /* HospitalListViewModelSpy.swift */,
+				42614AD025488319003BBAC8 /* HospitalListViewSpy.swift */,
 			);
 			path = Spies;
+			sourceTree = "<group>";
+		};
+		42614AD5254883C1003BBAC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42614AD6254883D1003BBAC8 /* NetworkManagerSpy.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		429D3C9B2547312400221CBB = {
@@ -151,6 +169,8 @@
 		429D3CBD2547312500221CBB /* Sensyne HospitalsTests */ = {
 			isa = PBXGroup;
 			children = (
+				42614AE62548897D003BBAC8 /* Hospital.csv */,
+				42614AD5254883C1003BBAC8 /* Common */,
 				42614AB9254876AA003BBAC8 /* Hospital List Tests */,
 				429D3CBE2547312500221CBB /* Sensyne_HospitalsTests.swift */,
 				429D3CC02547312500221CBB /* Info.plist */,
@@ -344,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42614AE72548897D003BBAC8 /* Hospital.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42614ACC25487B33003BBAC8 /* HospitalListViewModelTests.swift in Sources */,
 				42614ABB254876CA003BBAC8 /* HospitalListVCTests.swift in Sources */,
 				42614AC425487753003BBAC8 /* HospitalListViewModelSpy.swift in Sources */,
+				42614AD125488319003BBAC8 /* HospitalListViewSpy.swift in Sources */,
 				429D3CBF2547312500221CBB /* Sensyne_HospitalsTests.swift in Sources */,
+				42614AD7254883D1003BBAC8 /* NetworkManagerSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

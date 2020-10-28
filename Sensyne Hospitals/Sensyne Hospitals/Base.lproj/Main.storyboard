@@ -59,14 +59,33 @@
                     <view key="view" contentMode="scaleToFill" id="7y9-Bw-5cS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fus-Cj-oqA">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vgY-cE-xpr" id="ly7-9u-ALy"/>
+                                    <outlet property="delegate" destination="vgY-cE-xpr" id="fgr-Gz-va6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EKO-Iw-19j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fus-Cj-oqA" secondAttribute="bottom" id="IH7-iy-Uj5"/>
+                            <constraint firstItem="fus-Cj-oqA" firstAttribute="leading" secondItem="EKO-Iw-19j" secondAttribute="leading" id="i0S-gy-8Dq"/>
+                            <constraint firstItem="fus-Cj-oqA" firstAttribute="top" secondItem="EKO-Iw-19j" secondAttribute="top" id="rUw-Hm-y7o"/>
+                            <constraint firstItem="fus-Cj-oqA" firstAttribute="trailing" secondItem="EKO-Iw-19j" secondAttribute="trailing" id="vWI-Fi-x4b"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wxo-hj-MQ5"/>
+                    <connections>
+                        <outlet property="tableView" destination="fus-Cj-oqA" id="Rzi-A4-egs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qe8-gt-GN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="82"/>
+            <point key="canvasLocation" x="1821.7391304347827" y="81.696428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vIj-nP-sbD">

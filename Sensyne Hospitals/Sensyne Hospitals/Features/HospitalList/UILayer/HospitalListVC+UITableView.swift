@@ -13,6 +13,10 @@ extension HospitalListVC: UITableViewDelegate {
         return self.cellHeight
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let identifier = HospitalDetailsVC.storyboardIdentifier
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier) as? HospitalDetailsVC else {
@@ -20,7 +24,7 @@ extension HospitalListVC: UITableViewDelegate {
         }
         let hospital = self.hospitals[indexPath.row]
         vc.viewModel.hospital = hospital
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

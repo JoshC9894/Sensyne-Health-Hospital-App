@@ -8,7 +8,6 @@
 import UIKit
 
 class HospitalListCell: UITableViewCell {
-    
     static let identifier = "HospitalListCell"
 
     @IBOutlet weak var orgNameLabel: UILabel!
@@ -16,6 +15,6 @@ class HospitalListCell: UITableViewCell {
     
     func bindData(_ hospital: Hospital) {
         self.orgNameLabel.text = hospital.organisationName
-        self.orgTypeLabel.text = hospital.organisationType
+        self.orgTypeLabel.text = hospital.phoneNumber
     }
 }

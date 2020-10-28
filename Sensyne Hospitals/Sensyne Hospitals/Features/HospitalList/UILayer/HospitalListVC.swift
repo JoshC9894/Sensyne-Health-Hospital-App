@@ -16,7 +16,7 @@ protocol HospitalListViewProtocol: class {
 // MARK: - HospitalListVC
 class HospitalListVC: UIViewController {
     static let storyboardIdentifier: String = "HospitalListVC"
-    let cellHeight: CGFloat = 85.0
+    let cellHeight: CGFloat = UITableView.automaticDimension
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterButton: UIBarButtonItem!

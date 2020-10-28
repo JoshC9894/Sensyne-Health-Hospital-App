@@ -72,7 +72,8 @@ struct Hospital {
     }
     
     func coordinates() -> CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+        return CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly: self.latitude) ?? self.latitude,
+                                      longitude: CLLocationDegrees(exactly: self.longitude) ?? self.longitude)
     }
     
     func displayPhoneNumber() -> String {

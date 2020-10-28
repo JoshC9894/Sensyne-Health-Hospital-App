@@ -17,7 +17,7 @@ class HospitalListVCTests: XCTestCase {
     override func setUp() {
         self.window = UIWindow()
         
-        let sutIdentifier = HospitalListVC.
+        let sutIdentifier = HospitalListVC.storyboardIdentifier
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: sutIdentifier) as? HospitalListVC else {
             fatalError();
         }
@@ -36,12 +36,12 @@ class HospitalListVCTests: XCTestCase {
     
     func testUpdateHospitalsList() {
         let organisationName = "Test Hospital Name"
-        let organisationType = "Hospital"
+        let phoneNumber = "0123456789"
         
         self.window.addSubview(self.sut.view)
         var hospital = Hospital()
         hospital.organisationName = organisationName
-        hospital.organisationType = organisationType
+        hospital.phoneNumber = phoneNumber
         
         sut.updateHospitalsList([hospital])
         
@@ -52,6 +52,6 @@ class HospitalListVCTests: XCTestCase {
         
         XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 1)
         XCTAssertEqual(cell.orgNameLabel.text, organisationName)
-        XCTAssertEqual(cell.orgTypeLabel.text, organisationType)
+        XCTAssertEqual(cell.orgTypeLabel.text, phoneNumber)
     }
 }

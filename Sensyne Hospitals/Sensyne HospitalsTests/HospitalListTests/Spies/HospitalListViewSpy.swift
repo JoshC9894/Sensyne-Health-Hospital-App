@@ -5,6 +5,7 @@
 //  Created by Joshua Colley on 27/10/2020.
 //
 @testable import Sensyne_Hospitals
+import UIKit
 
 class HospitalListViewSpy: HospitalListViewProtocol {
     var didCallUpdateHospitalList: Bool = false
@@ -14,4 +15,6 @@ class HospitalListViewSpy: HospitalListViewProtocol {
         self.didCallUpdateHospitalList = true
         self.hospitals = hospitals
     }
+    
+    func presentFilters(_ actionSheet: UIAlertController) {}
 }

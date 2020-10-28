@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +28,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="77G-3p-v9g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Nn-03-dSi"/>
                             <constraint firstAttribute="bottom" secondItem="77G-3p-v9g" secondAttribute="bottom" id="bdW-CJ-kR3"/>
@@ -36,7 +37,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hospitals" id="klP-CI-z88">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="5T9-Sc-ytf">
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="5T9-Sc-ytf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="filterButtonSelector:" destination="BYZ-38-t0r" id="giM-YY-ilh"/>
                             </connections>
@@ -52,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="81.696428571428569"/>
         </scene>
-        <!--Hospital DetailsVC-->
+        <!--Hospital details-->
         <scene sceneID="SOu-yc-agv">
             <objects>
                 <viewController storyboardIdentifier="HospitalDetailsVC" id="vgY-cE-xpr" customClass="HospitalDetailsVC" customModule="Sensyne_Hospitals" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +72,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EKO-Iw-19j"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fus-Cj-oqA" secondAttribute="bottom" id="IH7-iy-Uj5"/>
                             <constraint firstItem="fus-Cj-oqA" firstAttribute="leading" secondItem="EKO-Iw-19j" secondAttribute="leading" id="i0S-gy-8Dq"/>
@@ -78,7 +80,7 @@
                             <constraint firstItem="fus-Cj-oqA" firstAttribute="trailing" secondItem="EKO-Iw-19j" secondAttribute="trailing" id="vWI-Fi-x4b"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wxo-hj-MQ5"/>
+                    <navigationItem key="navigationItem" title="Hospital details" id="wxo-hj-MQ5"/>
                     <connections>
                         <outlet property="tableView" destination="fus-Cj-oqA" id="Rzi-A4-egs"/>
                     </connections>
@@ -95,6 +97,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5tV-0l-0hd">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -107,6 +118,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="filter" width="16" height="16"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

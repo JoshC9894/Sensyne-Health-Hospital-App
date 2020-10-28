@@ -5,7 +5,7 @@
 //  Created by Joshua Colley on 27/10/2020.
 //
 
-import Foundation
+import UIKit
 
 protocol HospitalDetailsViewModelProtocol {
     var hospital: Hospital! { get set }
@@ -14,7 +14,7 @@ protocol HospitalDetailsViewModelProtocol {
 class HospitalDetailsViewModel: HospitalDetailsViewModelProtocol {
     var hospital: Hospital!
     
-    weak var view: HospitalDetailsViewProtocol?
+    var view: HospitalDetailsViewProtocol?
     
     init(view: HospitalDetailsViewProtocol?) {
         self.view = view

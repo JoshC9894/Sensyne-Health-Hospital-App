@@ -5,6 +5,8 @@
 //  Created by Joshua Colley on 26/10/2020.
 //
 
+import CoreLocation
+
 struct Hospital {
     var organisationId: String
     var organisationCode: String
@@ -56,5 +58,42 @@ struct Hospital {
         self.email = ""
         self.website = ""
         self.fax = ""
+    }
+    
+    func displayAddress() -> String {
+        var string = ""
+        if !self.address1.isEmpty { string = address1}
+        if !self.address2.isEmpty { string = string + ((string.isEmpty) ? address2 : ", \(address2)") }
+        if !self.address3.isEmpty { string = string + ((string.isEmpty) ? address3 : ", \(address3)") }
+        if !self.city.isEmpty { string = string + ((string.isEmpty) ? city : ", \(city)") }
+        if !self.county.isEmpty { string = string + ((string.isEmpty) ? county : ", \(county)") }
+        if !self.postcode.isEmpty { string = string + ((string.isEmpty) ? postcode : ", \(postcode)") }
+        return string
+    }
+    
+    func coordinates() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
+    
+    func displayPhoneNumber() -> String {
+        return self.phoneNumber.isEmpty ? "Not available" : self.phoneNumber
+    }
+    
+    func phoneURL() -> URL? {
+        let number = self.phoneNumber.replacingOccurrences(of: " ", with: "")
+        return URL(string: "tel://\(number)")
+    }
+    
+    func displayEmail() -> String {
+        return self.email.isEmpty ? "Not available" : self.email
+    }
+    
+    func displayWebsite() -> String {
+        return self.website.isEmpty ? "Not available" : self.website
+    }
+    
+    func websiteURL() -> URL? {
+        let url = self.website.replacingOccurrences(of: " ", with: "")
+        return URL(string: url)
     }
 }

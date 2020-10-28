@@ -44,9 +44,12 @@ class HospitalListVC: UIViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Hospitals"
+        searchController.searchBar.searchTextField.attributedPlaceholder = self.viewModel.searchBarPlaceholderText
+        searchController.searchBar.searchTextField.backgroundColor = UIColor.white.withAlphaComponent(0.1)
+        searchController.searchBar.searchTextField.textColor = UIColor.white
+        searchController.searchBar.searchTextField.leftView?.tintColor = .white
+        searchController.searchBar.searchTextField.rightView?.tintColor = .white
         navigationItem.searchController = searchController
-        definesPresentationContext = true
     }
     
     @IBAction func filterButtonSelector(_ sender: UIBarButtonItem) {

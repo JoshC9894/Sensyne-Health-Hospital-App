@@ -12,11 +12,11 @@ protocol HospitalListViewModelProtocol {
     func fetchHospitals()
     func filterHospitals(by query: String)
     func didTapFilterButton()
+    var searchBarPlaceholderText: NSAttributedString { get }
 }
 
 // MARK: - HospitalListViewModel
 class HospitalListViewModel: HospitalListViewModelProtocol {
-    
     weak var view: HospitalListViewProtocol?
     var networkManager: NetworkManagerProtocol
     var queue: DispatchQueue = DispatchQueue.main
@@ -30,6 +30,14 @@ class HospitalListViewModel: HospitalListViewModelProtocol {
     }
     
     // MARK: HospitalListViewModelProtocol Methods
+    var searchBarPlaceholderText: NSAttributedString = {
+        let text = "Search hospitals"
+        let string = NSAttributedString(string: text, attributes: [
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ])
+        return string
+    }()
+    
     func fetchHospitals() {
         let url = "http://media.nhschoices.nhs.uk/data/foi/Hospital.csv"
         networkManager.request(url: url, type: .get) { (result) in

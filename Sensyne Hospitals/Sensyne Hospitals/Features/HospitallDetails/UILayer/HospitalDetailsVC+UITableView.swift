@@ -8,7 +8,7 @@
 import UIKit
 
 enum HospitalDetailSections: Int {
-    case details, count
+    case details, location, contact, count
 }
 
 // MARK: - UITableViewDelegate
@@ -17,6 +17,8 @@ extension HospitalDetailsVC: UITableViewDelegate {
         guard let section = HospitalDetailSections(rawValue: indexPath.row) else { return 0.0 }
         switch section {
         case .details: return HospitalDetailsCell.cellHeight
+        case .location: return HospitalLocationCell.cellHeight
+        case .contact: return HospitalContactCell.cellHeight
         default: return 0.0
         }
     }
@@ -33,11 +35,34 @@ extension HospitalDetailsVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HospitalDetailsCell.identifier, for: indexPath) as? HospitalDetailsCell else {
+        guard let section = HospitalDetailSections(rawValue: indexPath.row) else { return UITableViewCell() }
+        switch section {
+        case .details:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HospitalDetailsCell.identifier, for: indexPath) as? HospitalDetailsCell else {
+                return UITableViewCell()
+            }
+            cell.bindData(self.viewModel.hospital)
+            return cell
+            
+        case .location:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HospitalLocationCell.identifier, for: indexPath) as? HospitalLocationCell else {
+                return UITableViewCell()
+            }
+            cell.bindData(self.viewModel.hospital)
+            return cell
+            
+        case .contact:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HospitalContactCell.identifier, for: indexPath) as? HospitalContactCell else {
+                return UITableViewCell()
+            }
+            cell.delegate = self
+            cell.bindData(self.viewModel.hospital)
+            return cell
+            
+        default:
             return UITableViewCell()
         }
-        cell.bindData(self.viewModel.hospital)
-        return cell
+        
     }
     
 }

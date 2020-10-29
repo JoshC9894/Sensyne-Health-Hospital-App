@@ -12,11 +12,6 @@ class NHSTrustFilterUITest: XCTestCase {
     let app = XCUIApplication()
 
     override func setUpWithError() throws {
-        let path = Bundle(for: NHSTrustFilterUITest.self).path(forResource: "Hospital", ofType: "csv") ?? ""
-        let url = URL(fileURLWithPath: path)
-        guard let data = try? Data(contentsOf: url) else { fatalError("No mock data found"); return }
-        
-        app.launchArguments += ["UI-TESTING"]
         app.launch()
         continueAfterFailure = true
     }
@@ -42,5 +37,4 @@ class NHSTrustFilterUITest: XCTestCase {
         let nonNHSCell_Two = app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["01932 414205"]/*[[".cells.staticTexts[\"01932 414205\"]",".staticTexts[\"01932 414205\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         XCTAssertFalse(nonNHSCell_Two.exists)
     }
-
 }

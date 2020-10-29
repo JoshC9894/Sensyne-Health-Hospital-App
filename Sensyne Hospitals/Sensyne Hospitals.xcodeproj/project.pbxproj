@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42339EBE254B086300CF0CF2 /* Hospital.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42339EBD254B086300CF0CF2 /* Hospital.csv */; };
 		42565EE82548E66400A4B6CA /* HospitalDetailsVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42565EE72548E66400A4B6CA /* HospitalDetailsVC+UITableView.swift */; };
 		42565EEE2548E7E800A4B6CA /* HospitalDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42565EEC2548E7E800A4B6CA /* HospitalDetailsCell.swift */; };
 		42565EEF2548E7E800A4B6CA /* HospitalDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42565EED2548E7E800A4B6CA /* HospitalDetailsCell.xib */; };
@@ -16,6 +17,7 @@
 		42565F0F2549AA6800A4B6CA /* HospitalContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42565F0D2549AA6800A4B6CA /* HospitalContactCell.xib */; };
 		42565F252549C51400A4B6CA /* HospitalDetailsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42565F242549C51400A4B6CA /* HospitalDetailsVCTests.swift */; };
 		42565F2B2549CB1300A4B6CA /* HospitalDetailsViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42565F2A2549CB1300A4B6CA /* HospitalDetailsViewModelSpy.swift */; };
+		42565F332549D22200A4B6CA /* NHSTrustFilterUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42565F322549D22200A4B6CA /* NHSTrustFilterUITest.swift */; };
 		42614ABB254876CA003BBAC8 /* HospitalListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614ABA254876CA003BBAC8 /* HospitalListVCTests.swift */; };
 		42614AC425487753003BBAC8 /* HospitalListViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614AC325487753003BBAC8 /* HospitalListViewModelSpy.swift */; };
 		42614ACC25487B33003BBAC8 /* HospitalListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42614ACB25487B33003BBAC8 /* HospitalListViewModelTests.swift */; };
@@ -32,7 +34,6 @@
 		429D3CB12547312500221CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429D3CB02547312500221CBB /* Assets.xcassets */; };
 		429D3CB42547312500221CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429D3CB22547312500221CBB /* LaunchScreen.storyboard */; };
 		429D3CBF2547312500221CBB /* Sensyne_HospitalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CBE2547312500221CBB /* Sensyne_HospitalsTests.swift */; };
-		429D3CCA2547312500221CBB /* Sensyne_HospitalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CC92547312500221CBB /* Sensyne_HospitalsUITests.swift */; };
 		429D3CE72547318100221CBB /* HospitalListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CE62547318100221CBB /* HospitalListVC.swift */; };
 		429D3CEC2547324600221CBB /* HospitalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CEB2547324600221CBB /* HospitalListViewModel.swift */; };
 		429D3CF3254732DC00221CBB /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D3CF2254732DC00221CBB /* Hospital.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42339EBD254B086300CF0CF2 /* Hospital.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hospital.csv; sourceTree = "<group>"; };
 		42565EE72548E66400A4B6CA /* HospitalDetailsVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HospitalDetailsVC+UITableView.swift"; sourceTree = "<group>"; };
 		42565EEC2548E7E800A4B6CA /* HospitalDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailsCell.swift; sourceTree = "<group>"; };
 		42565EED2548E7E800A4B6CA /* HospitalDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalDetailsCell.xib; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		42565F0D2549AA6800A4B6CA /* HospitalContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalContactCell.xib; sourceTree = "<group>"; };
 		42565F242549C51400A4B6CA /* HospitalDetailsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailsVCTests.swift; sourceTree = "<group>"; };
 		42565F2A2549CB1300A4B6CA /* HospitalDetailsViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailsViewModelSpy.swift; sourceTree = "<group>"; };
+		42565F322549D22200A4B6CA /* NHSTrustFilterUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHSTrustFilterUITest.swift; sourceTree = "<group>"; };
 		42614ABA254876CA003BBAC8 /* HospitalListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListVCTests.swift; sourceTree = "<group>"; };
 		42614AC325487753003BBAC8 /* HospitalListViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModelSpy.swift; sourceTree = "<group>"; };
 		42614ACB25487B33003BBAC8 /* HospitalListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModelTests.swift; sourceTree = "<group>"; };
@@ -90,7 +93,6 @@
 		429D3CBE2547312500221CBB /* Sensyne_HospitalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensyne_HospitalsTests.swift; sourceTree = "<group>"; };
 		429D3CC02547312500221CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		429D3CC52547312500221CBB /* Sensyne HospitalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sensyne HospitalsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		429D3CC92547312500221CBB /* Sensyne_HospitalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensyne_HospitalsUITests.swift; sourceTree = "<group>"; };
 		429D3CCB2547312500221CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		429D3CE62547318100221CBB /* HospitalListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListVC.swift; sourceTree = "<group>"; };
 		429D3CEB2547324600221CBB /* HospitalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModel.swift; sourceTree = "<group>"; };
@@ -262,8 +264,9 @@
 		429D3CC82547312500221CBB /* Sensyne HospitalsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				429D3CC92547312500221CBB /* Sensyne_HospitalsUITests.swift */,
 				429D3CCB2547312500221CBB /* Info.plist */,
+				42339EBD254B086300CF0CF2 /* Hospital.csv */,
+				42565F322549D22200A4B6CA /* NHSTrustFilterUITest.swift */,
 			);
 			path = "Sensyne HospitalsUITests";
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42339EBE254B086300CF0CF2 /* Hospital.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429D3CCA2547312500221CBB /* Sensyne_HospitalsUITests.swift in Sources */,
+				42565F332549D22200A4B6CA /* NHSTrustFilterUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
